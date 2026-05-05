@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Story Video Bot</title>
+  <meta name="description" content="Story Video Bot creates short vertical Arabic storytelling videos and posts them to authorized TikTok accounts.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f8fafc;
+      --ink: #111827;
+      --muted: #4b5563;
+      --line: #d9e1ea;
+      --accent: #ef2b5f;
+      --teal: #00c7c7;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    header {
+      background: #10141d;
+      color: white;
+      padding: 56px 24px 44px;
+    }
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 44px;
+      line-height: 1.1;
+    }
+    h2 {
+      margin-top: 34px;
+      font-size: 26px;
+    }
+    p {
+      max-width: 760px;
+      color: var(--muted);
+    }
+    header p {
+      color: #dbe5f2;
+      font-size: 18px;
+    }
+    main {
+      padding: 34px 24px 54px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin: 28px 0;
+    }
+    .card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .card strong {
+      display: block;
+      margin-bottom: 8px;
+    }
+    a {
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .badge {
+      display: inline-block;
+      border: 1px solid rgba(255,255,255,.28);
+      border-radius: 999px;
+      padding: 6px 12px;
+      margin-bottom: 18px;
+      color: #fff;
+      background: rgba(0,199,199,.16);
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 24px;
+      color: var(--muted);
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <span class="badge">Owner-operated content automation</span>
+      <h1>Story Video Bot</h1>
+      <p>Story Video Bot creates short vertical Arabic storytelling videos and posts them to TikTok accounts that explicitly authorize the app.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h2>What the app does</h2>
+    <p>The app helps its owner create 9:16 short-form story videos. It fetches public story sources, rewrites them into original Arabic scripts, generates narration and subtitles, renders an MP4 video, and sends the finished video to Telegram for visibility.</p>
+
+    <div class="grid">
+      <section class="card">
+        <strong>Login Kit</strong>
+        TikTok Login Kit is used only so the TikTok account owner can authorize the app.
+      </section>
+      <section class="card">
+        <strong>Content Posting API</strong>
+        The app uses TikTok's Content Posting API to upload or direct-post generated videos to the authorized account.
+      </section>
+      <section class="card">
+        <strong>AI-generated content</strong>
+        Generated videos are marked as AI-generated content through the posting API when published.
+      </section>
+    </div>
+
+    <h2>Authorized account workflow</h2>
+    <p>The owner controls video generation from a Telegram bot. After the owner connects TikTok, the bot can upload videos as drafts or direct-post them to the authorized account, depending on the permissions approved by TikTok.</p>
+
+    <h2>Policies</h2>
+    <p>
+      <a href="terms.html">Terms of Service</a>
+      &nbsp;|&nbsp;
+      <a href="privacy.html">Privacy Policy</a>
+    </p>
+  </main>
+
+  <footer>
+    <div class="wrap">Contact: storyvideobot-owner@example.com</div>
+  </footer>
+</body>
+</html>
