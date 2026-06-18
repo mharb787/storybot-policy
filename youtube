@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YouTube OAuth - Story Video Bot</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+    a {
+      color: #ef2b5f;
+      font-weight: 700;
+    }
+    code {
+      background: #eef2f7;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>YouTube OAuth</h1>
+    <p>This page is used as the OAuth redirect page for Story Video Bot. After the YouTube channel owner authorizes the app, the authorization code in the browser URL is copied into the Telegram bot to complete the connection.</p>
+
+    <h2>Requested permission</h2>
+    <p>The app requests only <code>https://www.googleapis.com/auth/youtube.upload</code> so it can upload generated videos to the authorized YouTube channel.</p>
+
+    <h2>Data use</h2>
+    <p>Google user data is used only for uploading generated videos. The app does not read channel analytics, comments, subscribers, or private videos, and does not sell or share Google user data.</p>
+
+    <p><a href="/">Back to Story Video Bot</a></p>
+  </main>
+</body>
+</html>

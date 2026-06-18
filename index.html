@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Story Video Bot</title>
-  <meta name="description" content="Story Video Bot creates short vertical Arabic storytelling videos and publishes them only to TikTok accounts that authorize the app.">
+  <meta name="description" content="Story Video Bot creates short vertical Arabic storytelling videos and uploads them only to YouTube channels that authorize the app.">
   <style>
     :root {
       color-scheme: light;
@@ -96,7 +96,7 @@
     <div class="wrap">
       <span class="badge">Owner-operated content automation</span>
       <h1>Story Video Bot</h1>
-      <p>Story Video Bot creates short vertical Arabic storytelling videos and publishes them only to TikTok accounts that explicitly authorize the app.</p>
+      <p>Story Video Bot creates short vertical Arabic storytelling videos and uploads them only to YouTube channels that explicitly authorize the app.</p>
     </div>
   </header>
 
@@ -106,27 +106,29 @@
 
     <div class="grid">
       <section class="card">
-        <strong>Login Kit</strong>
-        TikTok Login Kit is used only so the TikTok account owner can authorize the app.
+        <strong>Google OAuth</strong>
+        Google OAuth is used only so the YouTube channel owner can authorize video uploads.
       </section>
       <section class="card">
-        <strong>Content Posting API</strong>
-        The app uses TikTok's Content Posting API to upload generated videos as drafts or direct-post generated videos to the authorized account.
+        <strong>YouTube Data API</strong>
+        The app uses the YouTube Data API to upload generated videos to the authorized channel.
       </section>
       <section class="card">
         <strong>AI-generated content</strong>
-        Generated videos are marked as AI-generated content through the posting API when published.
+        Generated videos are marked as containing synthetic media when uploaded.
       </section>
     </div>
 
     <h2>Authorized account workflow</h2>
-    <p>The owner controls video generation from a Telegram bot. After the owner connects TikTok, the bot can upload videos as drafts or direct-post them to the authorized account, depending on the permissions approved by TikTok.</p>
+    <p>The owner controls video generation from a Telegram bot. After the owner connects YouTube, the bot can upload videos to the authorized channel using the configured privacy setting.</p>
 
     <h2>Policies</h2>
     <p>
       <a href="terms.html">Terms of Service</a>
       &nbsp;|&nbsp;
       <a href="privacy.html">Privacy Policy</a>
+      &nbsp;|&nbsp;
+      <a href="youtube">YouTube OAuth</a>
     </p>
   </main>
 
